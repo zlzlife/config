@@ -18,8 +18,8 @@
     ./deploy.sh
 ```
 
-### i3wm配置说明
+### [i3wm配置说明](https://github.com/zlzsingle/config/blob/master/i3wm/README.md)
 
-### vim配置说明
+### [vim配置说明](https://github.com/zlzsingle/config/blob/master/vim/README.md)
 
 ### zsh配置说明
