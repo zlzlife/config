@@ -10,11 +10,10 @@
 
 ## 部署
 ```
-    # install
     git clone https://github.com/zlzsingle/config.git ./config
     
-    # deploy
     cd config
+    
     ./deploy.sh
 ```
 
@@ -22,4 +21,4 @@
 
 ### [vim配置说明](https://github.com/zlzsingle/config/blob/master/vim/README.md)
 
-### zsh配置说明
+### [zsh配置说明](https://github.com/zlzsingle/config/blob/master/zsh/README.md)

@@ -30,6 +30,13 @@ _vimconfig(){
 
 # 部署zsh配置
 _zshconfig(){
+    zshpath=${HOME}/.zsh
+    if [[ ! -d ${zshpath} ]]
+    then
+        mkdir ${zshpath}
+    fi
+    cp ${rootpath}/zsh/.zsh/* ${zshpath}
+    cp ${rootpath}/zsh/.zshrc ~/
     echo -e "zsh deploy success!\n"
 }
 
