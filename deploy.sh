@@ -1,13 +1,34 @@
 #!/usr/bin/env bash
+
+rootpath=$(pwd)
+
+# 部署i3wm配置
 _i3wmconfig(){
-    cp -rf $(pwd)/i3wm/config/* ${HOME}/.config/i3/
+    cp -rf ${rootpath}/i3wm/config/* ~/.config/i3/
     echo -e "i3wm deploy success!\n"
 }
 
+# 部署vim配置
 _vimconfig(){
+
+    vundle=~/.vim/bundle/Vundle.vim
+    if [[ ! -d ${vundle} ]]
+    then
+        git clone https://github.com/VundleVim/Vundle.vim.git "${vundle}"
+    else
+        cd ${vundle}
+        git pull origin master
+    fi
+
+    cp ${rootpath}/vim/.vimrc ~/
+
+    # 安装vim插件
+    vim +PluginInstall +qall
+
     echo -e "vim deploy success!\n"
 }
 
+# 部署zsh配置
 _zshconfig(){
     echo -e "zsh deploy success!\n"
 }

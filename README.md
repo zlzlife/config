@@ -14,6 +14,12 @@
     git clone https://github.com/zlzsingle/config.git ./config
     
     # deploy
-    ./config/deploy.sh
+    cd config
+    ./deploy.sh
 ```
 
+### i3wm配置说明
+
+### vim配置说明
+
+### zsh配置说明
