@@ -101,5 +101,6 @@ export NVM_DIR="/home/zlz/.nvm"
 
 source ${HOME}/.zsh/my.zsh
 source ${HOME}/.zsh/git.zsh
+source ${HOME}/.zsh/docker.zsh
 
 
