@@ -8,3 +8,5 @@ alias clear-dockers="node $PROJECT/myfm/zlz/shell/clear-dockers.js"
 alias shadowsocks-app="$APPDIR/Shadowsocks-app/Shadowsocks-Qt5-3.0.1-x86_64.AppImage &"
 
 alias cat='ccat'
+
+alias shnow="shutdown now"
