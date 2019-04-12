@@ -27,6 +27,11 @@ _gaczp() {
     git push origin "$(_current_branch)"
 }
 
+_gacz() {
+    git add .
+    git cz
+}
+
 _gp() {
     git push origin "$(_current_branch)"
 }
@@ -46,6 +51,7 @@ _gc() {
 alias gp=_gp
 alias gac=_gac
 alias gacp=_gacp
+alias gacz=_gacz
 alias gaczp=_gaczp
 alias gfp=_gfp
 alias gc=_gc

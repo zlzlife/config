@@ -40,6 +40,29 @@ _zshconfig(){
     echo -e "zsh deploy success!\n"
 }
 
+runScript=$1
+
+echo "runScript=${runScript}"
+
+if [[ ${runScript} == 'vim' ]]
+then
+   _vimconfig
+   exit 1
+fi
+
+if [[ ${runScript} == 'zsh' ]]
+then
+   _zshconfig
+   exit 1
+fi
+
+if [[ ${runScript} == 'i3wm' ]]
+then
+   _i3wmconfig
+   exit 1
+fi
+
+
 read -t 10 -p "是否部署i3wm配置(Y/n)" depi3wm
 
 case ${depi3wm} in
