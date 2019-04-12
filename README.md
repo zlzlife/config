@@ -41,3 +41,8 @@ cd ./config && ./deploy.sh vim
 # 部署zsh配置
 cd ./config && ./deploy.sh zsh
 ```
+
+```bash
+# 部署所有配置
+cd ./config && ./deploy.sh
+```
