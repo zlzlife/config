@@ -42,6 +42,7 @@ _zshconfig(){
 
 runScript=$1
 
+echo "runScript取值(vim,zsh,i3wm)"
 echo "runScript=${runScript}"
 
 if [[ ${runScript} == 'vim' ]]
