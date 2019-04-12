@@ -1,24 +1,43 @@
-# config
-开发环境,工具配置
+## 开发环境,工具配置
 
 ```
-├── i3wm            // i3wm 配置
-├── vim             // vim 配置
-├── zsh             // zsh 配置
-└── deploy.sh       // 部署脚本
+├── deploy.sh                // 部署的shell脚本
+├── i3wm                     // i3wm
+│   ├── config               // i3wm的配置
+│   │   ├── config           // i3wm的基本配置
+│   │   ├── config.sh        // i3wm的执行的配置shell脚本
+│   │   └── i3status.conf    // i3wm状态栏配置
+│   └── README.md            // i3wm配置说明
+├── vim                      // vim配置
+│   └── README.md            // vim配置说明
+├── zsh                      // zsh配置
+│   └── README.md            // zsh配置说明
+└── README.md                // 配置说明
 ```
 
 ## 部署
+- [i3wm配置说明](https://github.com/zlzsingle/config/blob/master/i3wm/README.md)
+
+- [vim配置说明](https://github.com/zlzsingle/config/blob/master/vim/README.md)
+
+- [zsh配置说明](https://github.com/zlzsingle/config/blob/master/zsh/README.md)
+
+```bash
+# 获取源码
+git clone https://github.com/zlzsingle/config.git ./config
 ```
-    git clone https://github.com/zlzsingle/config.git ./config
-    
-    cd config
-    
-    ./deploy.sh
+
+```bash
+# 部署i3wm配置
+cd ./config && ./deploy.sh i3wm
 ```
 
-### [i3wm配置说明](https://github.com/zlzsingle/config/blob/master/i3wm/README.md)
+```bash
+# 部署vim配置
+cd ./config && ./deploy.sh vim
+```
 
-### [vim配置说明](https://github.com/zlzsingle/config/blob/master/vim/README.md)
-
-### [zsh配置说明](https://github.com/zlzsingle/config/blob/master/zsh/README.md)
+```bash
+# 部署zsh配置
+cd ./config && ./deploy.sh zsh
+```

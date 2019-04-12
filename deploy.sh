@@ -40,10 +40,15 @@ _zshconfig(){
     echo -e "zsh deploy success!\n"
 }
 
+status=0
 runScript=$1
 
-echo "runScript取值(vim,zsh,i3wm)"
-echo "runScript=${runScript}"
+if [[ -n ${runScript} ]]
+then
+    echo "runScript取值(vim,zsh,i3wm)"
+    echo "runScript=${runScript}"
+    status=1
+fi
 
 if [[ ${runScript} == 'vim' ]]
 then
@@ -63,25 +68,34 @@ then
    exit 1
 fi
 
+if [[ ${status} == 1 ]]
+then
+    echo "参数错误,取值应该为(vim,zsh,i3wm);${runScript}参数无效"
+    exit 1
+fi
 
-read -t 10 -p "是否部署i3wm配置(Y/n)" depi3wm
+_vimconfig
+_zshconfig
+_i3wmconfig
 
-case ${depi3wm} in
-Y | y)
-    _i3wmconfig
-esac
-
-
-read -t 10 -p "是否部署vim配置(Y/n)" depvim
-
-case ${depvim} in
-Y | y)
-    _vimconfig
-esac
-
-read -t 10 -p "是否部署zsh配置(Y/n)" depzsh
-
-case ${depzsh} in
-Y | y)
-    _zshconfig
-esac
+#read -t 10 -p "是否部署i3wm配置(Y/n)" depi3wm
+#
+#case ${depi3wm} in
+#Y | y)
+#    _i3wmconfig
+#esac
+#
+#
+#read -t 10 -p "是否部署vim配置(Y/n)" depvim
+#
+#case ${depvim} in
+#Y | y)
+#    _vimconfig
+#esac
+#
+#read -t 10 -p "是否部署zsh配置(Y/n)" depzsh
+#
+#case ${depzsh} in
+#Y | y)
+#    _zshconfig
+#esac
