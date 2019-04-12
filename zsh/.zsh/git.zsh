@@ -11,7 +11,6 @@ _gac() {
         then
             commit_info="add or update files"
         fi
-    echo "${commit_info}"
     git add .
     git commit -m ${commit_info}
 }
@@ -42,7 +41,6 @@ _gfp() {
 }
 
 _gc() {
-    echo "commit info = $1"
     git add .
     git commit -m "$1"
 }
