@@ -46,8 +46,8 @@ _dlogin(){
 alias dims="docker images"
 alias dimp="docker image prune"
 
-alias dpa="docker ps -a"
-alias dp="docker ps"
+alias dpsa="docker ps -a"
+alias dps="docker ps"
 
 # 示例: dl redis
 alias dl=_dl
