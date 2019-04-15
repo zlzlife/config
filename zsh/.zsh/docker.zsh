@@ -49,6 +49,9 @@ alias dimp="docker image prune"
 alias dpsa="docker ps -a"
 alias dps="docker ps"
 
+alias drm="docker rm"
+alias drmi="docker rmi"
+
 # 示例: dl redis
 alias dl=_dl
 
