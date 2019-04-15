@@ -11,7 +11,10 @@ _xrandr(){
 
 #启动webstorm
 _webstorm(){
-    ${HOME}/Application/WebStorm-183.5153.33/bin/webstorm.sh &
+    if [[ -f ${HOME}//Application/WebStorm-183.5153.33/bin/webstorm.sh ]]
+    then
+        ${HOME}/Application/WebStorm-183.5153.33/bin/webstorm.sh &
+    fi
 }
 
 #桌面壁纸定时更换
