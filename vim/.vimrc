@@ -57,10 +57,17 @@ nmap <silent> <F9> <Plug>StopMarkdownPreview    " for normal mode
 imap <silent> <F9> <Plug>StopMarkdownPreview    " for insert mode
 
 " ============插件配置之scrooloose/nerdtree============
-" Ctrl+N 打开/关闭
-" map <C-n> :NERDTreeToggle<CR>
+" 显示或关闭tree
 nmap <silent> <F2> :NERDTreeToggle<CR>
 imap <silent> <F2> :NERDTreeToggle<CR>
+
+" 获取焦点
+nmap <silent> <C-f> :NERDTreeFocus<CR>
+imap <silent> <C-f> :NERDTreeFocus<CR>
+
+" 刷新NERDTree
+nmap <silent> <F5> :NERDTreeRefreshRoot<CR>
+imap <silent> <F5> :NERDTreeRefreshRoot<CR>
 
 " 当不带参数打开Vim时自动加载项目树
 autocmd StdinReadPre * let s:std_in=1
@@ -70,7 +77,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " 开启vim时,自动弹出NERDTree
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 
 " 不显示这些文件
 let NERDTreeIgnore=['node_modules', '\.idea', '\.git'] "ignore files in NERDTree
@@ -79,7 +86,7 @@ let NERDTreeIgnore=['node_modules', '\.idea', '\.git'] "ignore files in NERDTree
 let NERDTreeMinimalUI=1
 
 " 显示行号
-let NERDTreeShowLineNumbers=1
+" let NERDTreeShowLineNumbers=1
 let NERDTreeAutoCenter=1
 
 " 是否显示隐藏文件

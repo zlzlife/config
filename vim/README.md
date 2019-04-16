@@ -48,6 +48,50 @@
     filetype plugin indent on              " 必须 加载vim自带和插件相应的语法和文件类型相关脚本
 ```
 
+- vim插件之nerdtree配置
+```
+    " 显示或关闭tree
+    nmap <silent> <F2> :NERDTreeToggle<CR>
+    imap <silent> <F2> :NERDTreeToggle<CR>
+    
+    " 获取焦点
+    nmap <silent> <C-f> :NERDTreeFocus<CR>
+    imap <silent> <C-f> :NERDTreeFocus<CR>
+    
+    " 刷新NERDTree
+    nmap <silent> <F5> :NERDTreeRefreshRoot<CR>
+    imap <silent> <F5> :NERDTreeRefreshRoot<CR>
+    
+    " 当不带参数打开Vim时自动加载项目树
+    autocmd StdinReadPre * let s:std_in=1
+    autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+    
+    " 当所有文件关闭时关闭项目树窗格
+    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+    
+    " 开启vim时,自动弹出NERDTree
+    " autocmd vimenter * NERDTree
+    
+    " 不显示这些文件
+    let NERDTreeIgnore=['node_modules', '\.idea', '\.git'] "ignore files in NERDTree
+    
+    " 不显示项目树上额外的信息，例如帮助、提示什么的
+    let NERDTreeMinimalUI=1
+    
+    " 显示行号
+    " let NERDTreeShowLineNumbers=1
+    let NERDTreeAutoCenter=1
+    
+    " 是否显示隐藏文件
+    let NERDTreeShowHidden=1
+    
+    " 目录收起图标
+    let g:NERDTreeDirArrowExpandable = '▸'
+    
+    " 目录展开图标
+    let g:NERDTreeDirArrowCollapsible = '▾'
+```
+
 - vim插件之markdown-preview配置
 ```
     let g:mkdp_path_to_chrome = ""
@@ -62,3 +106,22 @@
     nmap <silent> <F9> <Plug>StopMarkdownPreview    " for normal mode
     imap <silent> <F9> <Plug>StopMarkdownPreview    " for insert mode
 ```
+## vim插件
+- [nerdtree](https://github.com/scrooloose/nerdtree)
+- [markdown-preview](https://github.com/iamcco/markdown-preview.vim)
+
+## 快捷键说明
+- 复制选定快: **Y**
+- 复制当前行: **YY**
+- 剪切选定快: **D**
+- 删除当前行: **DD**
+- 删除当前字符: **X**
+- 还原上一个操作: **U**
+
+## 自定义快捷键
+- 弹出NERDTree: **F2**
+- 刷新NERDTree: **F5**
+- Markdown预览: **F8**
+- Markdown关闭预览: **F9**
+- NERDTree获取焦点: **Ctl+F**
+
