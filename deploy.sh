@@ -5,7 +5,7 @@ rootpath=$(pwd)
 # 部署i3wm配置
 _i3wmconfig(){
     cp -rf ${rootpath}/i3wm/config/* ~/.config/i3/
-    echo -e "i3wm deploy success!\n"
+    echo -e "i3wm deploy success!"
 }
 
 # 部署vim配置
@@ -25,7 +25,7 @@ _vimconfig(){
     # 安装vim插件
     vim +PluginInstall +qall
 
-    echo -e "vim deploy success!\n"
+    echo -e "vim deploy success!"
 }
 
 # 部署zsh配置
@@ -37,7 +37,7 @@ _zshconfig(){
     fi
     cp ${rootpath}/zsh/.zsh/* ${zshpath}
     cp ${rootpath}/zsh/.zshrc ~/
-    echo -e "zsh deploy success!\n"
+    echo -e "zsh deploy success!"
 }
 
 status=0
@@ -45,8 +45,8 @@ runScript=$1
 
 if [[ -n ${runScript} ]]
 then
-    echo "runScript取值(vim,zsh,i3wm)"
-    echo "runScript=${runScript}"
+#    echo "runScript取值(vim,zsh,i3wm)"
+#    echo "runScript=${runScript}"
     status=1
 fi
 
