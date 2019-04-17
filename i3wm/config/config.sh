@@ -11,7 +11,7 @@ _xrandr(){
 
 #启动webstorm
 _webstorm(){
-    if [[ -f ${HOME}//Application/WebStorm-183.5153.33/bin/webstorm.sh ]]
+    if [[ -f ${HOME}/Application/WebStorm-183.5153.33/bin/webstorm.sh ]]
     then
         ${HOME}/Application/WebStorm-183.5153.33/bin/webstorm.sh &
     fi
@@ -26,6 +26,15 @@ _wallpaper(){
 
     # 间隔30秒切换一张壁纸
     interval=30s
+
+    if [[ -f $(command -v node) ]]
+    then
+        wallpaper=${HOME}/.config/i3/wallpaper.js
+        if [[ -f ${wallpaper} ]]
+        then
+            node ${wallpaper} ${path} 1
+        fi
+    fi
 
     if [[ -n $(which feh) ]]
     then
@@ -46,6 +55,6 @@ _wallpaper(){
     fi
 }
 
-_xrandr
-_webstorm
+#_xrandr
+#_webstorm
 _wallpaper
