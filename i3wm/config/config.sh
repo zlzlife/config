@@ -32,7 +32,7 @@ _wallpaper(){
         wallpaper=${HOME}/.config/i3/wallpaper.js
         if [[ -f ${wallpaper} ]]
         then
-            node ${wallpaper} ${path} 1
+            node ${wallpaper} ${path} 1 &
         fi
     fi
 
