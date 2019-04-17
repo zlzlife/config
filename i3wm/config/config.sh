@@ -55,6 +55,6 @@ _wallpaper(){
     fi
 }
 
-#_xrandr
-#_webstorm
+_xrandr
+_webstorm
 _wallpaper
