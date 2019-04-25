@@ -31,8 +31,12 @@ _gacz() {
     git cz
 }
 
-_gp() {
+_gpush() {
     git push origin "$(_current_branch)"
+}
+
+_gpull() {
+    git pull origin "$(_current_branch)"
 }
 
 _gfp() {
@@ -46,11 +50,12 @@ _gc() {
 }
 
 # git 命令简写
-alias gp=_gp
 alias gac=_gac
 alias gacp=_gacp
 alias gacz=_gacz
 alias gaczp=_gaczp
+alias gpush=_gpush
+alias gpull=_gpull
 alias gfp=_gfp
 alias gc=_gc
 
