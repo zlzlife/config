@@ -57,10 +57,10 @@ alias dpull="docker pull"
 alias dpush="docker push"
 
 # 示例: dl redis
-alias dl=_dl
+alias dlogs=_dl
 
 # 示例: dlf redis
-alias dlf=_dlf
+alias dlogsf=_dlf
 
 # 示例: drnpd redis 6379 6379 redis:latest
 alias drnpd=_drnpd
