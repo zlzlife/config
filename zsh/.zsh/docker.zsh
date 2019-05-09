@@ -53,6 +53,8 @@ alias drm="docker rm"
 alias drmi="docker rmi"
 
 alias dstop="docker stop"
+alias dpull="docker pull"
+alias dpush="docker push"
 
 # 示例: dl redis
 alias dl=_dl
