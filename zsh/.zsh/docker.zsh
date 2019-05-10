@@ -41,6 +41,14 @@ _dlogin(){
 }
 
 
+# 停止删除容器
+# dstoprm node-quant
+_dstoprm(){
+    docker stop $1
+    docker rm $1
+}
+
+
 # docker 命令简写
 
 alias dims="docker images"
@@ -69,3 +77,5 @@ alias drnpd=_drnpd
 
 # 示例: drnpd demo dockerhub.com
 alias dlogin=_dlogin
+
+alias dstoprm=_dstoprm
