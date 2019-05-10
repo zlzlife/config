@@ -22,8 +22,13 @@
     # zsh-syntax-highlighting 语法高亮显示
     # zsh-autosuggestions 自动补全
     plugins=(
+      # 解析
       extract
+      # 高亮显示
       zsh-syntax-highlighting
+      # 自动补全
       zsh-autosuggestions
+      # 历史智能提示
+      fzf-zsh
     )
 ```
