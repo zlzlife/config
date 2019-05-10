@@ -16,6 +16,12 @@
 ```
 
 ## 部署
+- [chrome配置说明](https://github.com/zlzsingle/config/blob/master/chrome/README.md)
+
+- [tmux配置说明](https://github.com/zlzsingle/config/blob/master/tmux/README.md)
+
+- [webstorm配置说明](https://github.com/zlzsingle/config/blob/master/webstorm/README.md)
+
 - [i3wm配置说明](https://github.com/zlzsingle/config/blob/master/i3wm/README.md)
 
 - [vim配置说明](https://github.com/zlzsingle/config/blob/master/vim/README.md)
