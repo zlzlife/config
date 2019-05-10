@@ -28,7 +28,7 @@
       zsh-syntax-highlighting
       # 自动补全
       zsh-autosuggestions
-      # 历史智能提示
+      # 历史智能提示 crt+r
       fzf-zsh
     )
 ```
