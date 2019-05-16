@@ -65,6 +65,7 @@ alias dpull="docker pull"
 alias dpush="docker push"
 alias drun="docker run"
 alias dexec="docker exec"
+alias drestart="docker restart"
 
 # 示例: dl redis
 alias dlogs=_dl
