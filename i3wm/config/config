@@ -189,4 +189,4 @@ bindsym --release Control+$mod+a exec "flameshot gui"
 bindsym $mod+l exec "scrot /tmp/lockscreen.png && mogrify -scale 50% -gaussian-blur 0x4 -gamma 0.8 -scale 200% /tmp/lockscreen.png && i3lock -i /tmp/lockscreen.png"
 
 # 启动运行脚本
-#exec ${HOME}/.config/i3/config.sh
+exec ${HOME}/.config/i3/config.sh

@@ -4,7 +4,7 @@
 #自动更新时间
 # ntpdate pool.ntp.org
 
-#设置扩张屏幕
+#设置扩展屏幕
 _xrandr(){
     xrandr --output DP-1 --primary --output DP-1-2 --rotate left --left-of DP-1 --auto
 }
@@ -64,6 +64,6 @@ _setting_wallpaper(){
 }
 
 _xrandr
-_webstorm
+#_webstorm
 #_wallpaper
-_setting_wallpaper
+#_setting_wallpaper
