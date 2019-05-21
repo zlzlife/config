@@ -64,6 +64,7 @@ alias gssh="git stash"
 alias gsshp="git stash pop"
 alias gsshls="git stash list"
 alias gadd="git add ."
+alias gclone="git clone"
 alias gcz="git cz"
 
 alias gck="git checkout"
