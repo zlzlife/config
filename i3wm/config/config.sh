@@ -48,11 +48,11 @@ _wallpaper(){
 }
 
 _setting_wallpaper(){
-    image="/home/zlz/Downloads/t017180e089128e9749.jpg"
-    if [[ -f ${image} ]]
-    then
-        feh --bg-scale ${image}
-    fi
+    # image="${HOME}/Downloads/t017180e089128e9749.jpg"
+    # if [[ -f ${image} ]]
+    # then
+    #     feh --bg-scale ${image}
+    # fi
 }
 
 _xrandr
