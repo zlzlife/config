@@ -1,23 +1,15 @@
 #!/usr/bin/env bash
-#启动运行脚本
+# 启动运行脚本
 
-#自动更新时间
+# 自动更新时间
 # ntpdate pool.ntp.org
 
-#设置扩展屏幕
+# 设置扩展屏幕
 _xrandr(){
     xrandr --output DP-1 --primary --output DP-1-2 --rotate left --left-of DP-1 --auto
 }
 
-#启动webstorm
-_webstorm(){
-    if [[ -f ${HOME}/Application/WebStorm-183.5153.33/bin/webstorm.sh ]]
-    then
-        ${HOME}/Application/WebStorm-183.5153.33/bin/webstorm.sh &
-    fi
-}
-
-#桌面壁纸定时更换
+# 桌面壁纸定时更换
 _wallpaper(){
     shopt -s nullglob
 
@@ -64,6 +56,5 @@ _setting_wallpaper(){
 }
 
 _xrandr
-#_webstorm
 #_wallpaper
 #_setting_wallpaper
