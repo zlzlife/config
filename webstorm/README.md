@@ -1,7 +1,8 @@
 # WebStorm
 
-## 配置
-- [下载](https://raw.githubusercontent.com/zlzsingle/config/master/webstorm/settings.zip)
+## 下载
+- [软件](https://www.jetbrains.com/webstorm/download/#section=linux)
+- [配置](https://raw.githubusercontent.com/zlzsingle/config/master/webstorm/settings.zip)
 
 ## 插件
 - [地址大全](https://plugins.jetbrains.com/webstorm)
