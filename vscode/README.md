@@ -25,4 +25,6 @@
 | ctrl+shift+k | ctrl+d | editor.action.deleteLines | 单行删除 |
 | ctrl+j | alt+f12 | workbench.action.togglePanel | 切换视图 |
 | ctrl+shift+` | ctrl+alt+n | workbench.action.terminal.new | 新建终端 |
+| ctrl+shift+r |        | workbench.action.quickOpenNavigatePreviousInRecentFilesPicker | 全局搜索 |
+| ctrl+shift+i | ctrl+shift+r | editor.action.formatDocument.none | 格式化代码 |
 
