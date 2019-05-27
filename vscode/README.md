@@ -21,7 +21,7 @@
 
 | 默认按键盘 | 自定义按键 | 命令行 | 功能 |
 |:----------|:-------|:--------|:--------------|
-| ctrl+p |        | workbench.action.quickOpen | 查找文件 |
+| ctrl+p | ctrl+shift+r | workbench.action.quickOpen | 查找文件 |
 | ctrl+shift+k | ctrl+d | editor.action.deleteLines | 单行删除 |
 | ctrl+j | alt+f12 | workbench.action.togglePanel | 切换视图 |
 | ctrl+shift+` | ctrl+alt+n | workbench.action.terminal.new | 新建终端 |
