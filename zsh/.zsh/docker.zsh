@@ -53,6 +53,7 @@ _dstoprm(){
 
 alias dims="docker images"
 alias dimp="docker image prune"
+alias dimpf="docker image prune -f"
 
 alias dpsa="docker ps -a"
 alias dps="docker ps"
