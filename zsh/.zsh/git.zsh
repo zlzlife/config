@@ -1,7 +1,7 @@
 
 # git 命令相关的函数
 _current_branch() {
-    br=`git branch | grep "*"`
+    br=$(git branch | grep "*")
     echo ${br/* /}
 }
 
