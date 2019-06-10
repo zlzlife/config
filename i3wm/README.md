@@ -68,6 +68,16 @@
     bindsym $mod+l exec "scrot /tmp/lockscreen.png && mogrify -scale 50% -gaussian-blur 0x4 -gamma 0.8 -scale 200% /tmp/lockscreen.png && i3lock -i /tmp/lockscreen.png"
 ```
 
+- 音量调节 **$mod** + **F12,F11,F10**
+```shell
+    # 音量+5%
+    bindsym $mod+F12 exec amixer set Master 5%+
+    # 音量-5%
+    bindsym $mod+F11 exec amixer set Master 5%-
+    # 静音,取消静音
+    bindsym $mod+F10 exec amixer set Master toggle
+```
+
 - 开启一个工作区 **$mod** + (**1** ~ **0**)
 ```shell
     bindsym $mod+1 workspace 1
