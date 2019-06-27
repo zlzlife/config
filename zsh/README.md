@@ -17,6 +17,11 @@
 
 ## 配置
 - 插件
+    - [extract](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/extract)
+    - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting.git)
+    - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+    - [fzf-zsh](https://github.com/Wyntau/fzf-zsh.git)
+
 ```
     # extract 解析zip包
     # zsh-syntax-highlighting 语法高亮显示
