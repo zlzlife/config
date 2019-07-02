@@ -16,21 +16,21 @@
 ```
 
 ## 部署
-- [chrome配置说明](https://github.com/zlzsingle/config/blob/master/chrome/README.md)
+- [chrome配置说明](https://github.com/zlzlife/config/blob/master/chrome/README.md)
 
-- [tmux配置说明](https://github.com/zlzsingle/config/blob/master/tmux/README.md)
+- [tmux配置说明](https://github.com/zlzlife/config/blob/master/tmux/README.md)
 
-- [webstorm配置说明](https://github.com/zlzsingle/config/blob/master/webstorm/README.md)
+- [webstorm配置说明](https://github.com/zlzlife/config/blob/master/webstorm/README.md)
 
-- [i3wm配置说明](https://github.com/zlzsingle/config/blob/master/i3wm/README.md)
+- [i3wm配置说明](https://github.com/zlzlife/config/blob/master/i3wm/README.md)
 
-- [vim配置说明](https://github.com/zlzsingle/config/blob/master/vim/README.md)
+- [vim配置说明](https://github.com/zlzlife/config/blob/master/vim/README.md)
 
-- [zsh配置说明](https://github.com/zlzsingle/config/blob/master/zsh/README.md)
+- [zsh配置说明](https://github.com/zlzlife/config/blob/master/zsh/README.md)
 
 ```bash
 # 获取源码
-git clone https://github.com/zlzsingle/config.git ./config
+git clone https://github.com/zlzlife/config.git ./config
 ```
 
 ```bash
