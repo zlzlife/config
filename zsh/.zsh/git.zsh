@@ -99,4 +99,6 @@ alias gdtag='git tag -d $1'
 alias gstag='git show $1'
 alias gpatag='git push --tags'
 
+alias gchpick='git cherry-pick'
+
 alias glola="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --all"
