@@ -66,6 +66,7 @@ alias dpull="docker pull"
 alias dpush="docker push"
 alias drun="docker run"
 alias dexec="docker exec"
+alias dstart="docker start"
 alias drestart="docker restart"
 alias dclearlog='sudo sh -c "$(curl https://raw.githubusercontent.com/zlzlife/zlz-project/master/docker/clear-container-log.sh)"'
 
