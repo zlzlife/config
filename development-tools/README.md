@@ -1,7 +1,19 @@
 # 开发工具大全
 
-## mongo
+## Mongo
 - [Robo 3T](https://robomongo.org)
 
-## reids
+## Redis
 - [Redis Desktop Manager](https://redisdesktop.com/download)
+
+## WebStorm
+- [WebStorm](https://www.jetbrains.com/webstorm/)
+
+## GoLang
+- [GoLand](https://www.jetbrains.com/go/)
+
+## Python
+- [Pycharm](https://www.jetbrains.com/pycharm/download)
+
+## Database
+- [Datagrip](https://www.jetbrains.com/datagrip/)
