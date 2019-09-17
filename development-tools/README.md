@@ -18,5 +18,5 @@
 ## Database
 - [Datagrip](https://www.jetbrains.com/datagrip/)
 
-## vscode
-- [vscode](https://code.visualstudio.com)
+## Vscode
+- [Vscode](https://code.visualstudio.com)
