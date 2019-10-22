@@ -67,6 +67,7 @@ plugins=(
   zsh-syntax-highlighting
   zsh-autosuggestions
   fzf-zsh
+  git-open
 )
 
 source $ZSH/oh-my-zsh.sh

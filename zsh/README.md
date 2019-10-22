@@ -21,6 +21,7 @@
     - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting.git)
     - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
     - [fzf-zsh](https://github.com/Wyntau/fzf-zsh.git)
+    - [git-open](https://github.com/paulirish/git-open)
 
 ```
     # extract 解析zip包
@@ -35,5 +36,7 @@
       zsh-autosuggestions
       # 历史智能提示 crt+r
       fzf-zsh
+      # git 网页查看
+      git-open
     )
 ```
