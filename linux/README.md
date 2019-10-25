@@ -1,4 +1,4 @@
-# linux命令行工具
+# linux工具
 
 - 全局搜索工具 [silversearcher-ag](https://github.com/ggreer/the_silver_searcher)
 ```bash 
@@ -29,4 +29,9 @@ apt install tmux
 - 监控工具 [htop](https://github.com/hishamhm/htop)
 ```bash
 apt install htop
+```
+
+- 远程桌面工具 [remmina](https://zhuanlan.zhihu.com/p/26879292)
+```bash
+sudo apt-get install remmina remmina-plugin-*
 ```
