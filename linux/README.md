@@ -35,3 +35,9 @@ apt install htop
 ```bash
 sudo apt-get install remmina remmina-plugin-*
 ```
+
+- 桌面录屏工具 [SimpleScreenRecorder](https://github.com/MaartenBaert/ssr)
+```bash
+sudo apt-get update
+sudo apt-get install simplescreenrecorder
+```
