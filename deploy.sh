@@ -40,6 +40,7 @@ _zshconfig(){
 
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH/custom/plugins/zsh-syntax-highlighting
     git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH/custom/plugins/zsh-autosuggestions
+    git clone https://github.com/junegunn/fzf.git $ZSH/custom/plugins/fzf
     git clone https://github.com/Treri/fzf-zsh.git $ZSH/custom/plugins/fzf-zsh
     git clone https://github.com/paulirish/git-open.git $ZSH/custom/plugins/git-open
 
