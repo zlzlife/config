@@ -5,3 +5,7 @@
 - [漏洞大全](https://www.exploit-db.com/)
 
 - [metasploit一键安装脚本](https://github.com/rapid7/metasploit-framework/wiki/Nightly-Installers)
+
+- [ubuntu官网地址](https://ubuntu.com/)
+
+- [ubuntu-cn地址](https://cn.ubuntu.com/)
