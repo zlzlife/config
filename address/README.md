@@ -9,3 +9,5 @@
 - [ubuntu官网地址](https://ubuntu.com/)
 
 - [ubuntu-cn地址](https://cn.ubuntu.com/)
+
+- [ubuntu-releases地址](http://releases.ubuntu.com)
