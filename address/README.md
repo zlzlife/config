@@ -11,3 +11,5 @@
 - [ubuntu-cn地址](https://cn.ubuntu.com/)
 
 - [ubuntu-releases地址](http://releases.ubuntu.com)
+
+- [冷熊简历](http://cv.ftqq.com/)
