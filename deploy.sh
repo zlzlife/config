@@ -8,6 +8,12 @@ _i3wmconfig(){
     echo -e "i3wm deploy success!"
 }
 
+# 部署tmux配置
+_tmuxconfig(){
+  cp -rf ${rootpath}/tmux/.tmux.conf ~/
+  echo -e "tmux deploy success"
+}
+
 # 部署vim配置
 _vimconfig(){
 
@@ -64,6 +70,12 @@ then
    exit 1
 fi
 
+if [[ ${runScript} == 'tmux' ]]
+then
+   _tmuxconfig
+   exit 1
+fi
+
 if [[ ${runScript} == 'zsh' ]]
 then
    _zshconfig
@@ -78,11 +90,12 @@ fi
 
 if [[ ${status} == 1 ]]
 then
-    echo "参数错误,取值应该为(vim,zsh,i3wm);${runScript}参数无效"
+    echo "参数错误,取值应该为(vim,tmux,zsh,i3wm);${runScript}参数无效"
     exit 1
 fi
 
 _vimconfig
+_tmuxconfig
 _zshconfig
 _i3wmconfig
 

@@ -31,5 +31,8 @@
     tmux attach -t [sessionName]
 ```
 
-## 快捷键
+## 快捷键 (prefix见 .tmux.conf)
+
+- 上下分屏: ** prefix + " **
+- 左右分屏: ** prefix + % **
 

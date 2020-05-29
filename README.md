@@ -39,6 +39,11 @@ cd ./config && ./deploy.sh i3wm
 ```
 
 ```bash
+# 部署tmux配置
+cd ./config && ./deploy.sh tmux
+```
+
+```bash
 # 部署vim配置
 cd ./config && ./deploy.sh vim
 ```
