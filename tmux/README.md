@@ -1,9 +1,14 @@
 # tmux个人配置
 
 ## 安装
-- ubuntu 系统
+- ubuntu系统
 ```shell
     sudo apt install tmux
+```
+
+- mac系统
+```shell
+     brew install tmux
 ```
 
 ## 命令大全
@@ -13,6 +18,7 @@
     # 列出所有可以快捷和其运行的tmux命令
     tmux list-keys
     
+    # 列出所有命令
     tmux list-commands
 ```
 
