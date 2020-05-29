@@ -1,12 +1,12 @@
 # i3wm个人配置
-## 安装i3wm
+### 安装i3wm
 
 - ubuntu 系统
 ```shell
     sudo apt install i3
 ```
 
-## 安装配置应用软件
+### 安装配置应用软件
 - 截图软件,使用 [flameshot](https://flameshot.js.org/) ubuntu18.04以上系统可安装
 ```shell
     sudo apt install flameshot 
@@ -22,7 +22,7 @@
     sudo apt install feh
 ```
 
-## 配置
+### 配置
 - 设置功能键,一般配置的是**windows**键或**super**键, alt键在配置中写作**mod1**,回车键**Enter**写作**Return**
 ```shell
     set $mod Mod4   #配置windows键写法

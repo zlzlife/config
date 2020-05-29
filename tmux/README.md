@@ -1,6 +1,6 @@
 # tmux个人配置
 
-## 安装
+### 安装
 - ubuntu系统
 ```shell
     sudo apt install tmux
@@ -11,7 +11,7 @@
      brew install tmux
 ```
 
-## 命令大全
+### 命令大全
 
 - 基本操作
 ```shell
@@ -31,8 +31,8 @@
     tmux attach -t [sessionName]
 ```
 
-## 快捷键 (prefix见 .tmux.conf)
+### 快捷键 (prefix见 .tmux.conf)
 
-- 上下分屏: ** prefix + " **
-- 左右分屏: ** prefix + % **
+- 上下分屏 : **prefix + "**
+- 左右分屏 : **prefix + %**
 
