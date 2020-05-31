@@ -1,6 +1,7 @@
 
 # git 命令相关的函数
 _current_branch() {
+#    git symbolic-ref --short -q HEAD
     br=$(git branch | grep "*")
     echo ${br/* /}
 }

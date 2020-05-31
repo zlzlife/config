@@ -44,13 +44,48 @@ _zshconfig(){
     cp ${rootpath}/zsh/.zsh/* ${zshpath}
     cp ${rootpath}/zsh/.zshrc ~/
 
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH/custom/plugins/zsh-syntax-highlighting
-    git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH/custom/plugins/zsh-autosuggestions
-    git clone https://github.com/junegunn/fzf.git $ZSH/custom/plugins/fzf
-    git clone https://github.com/Treri/fzf-zsh.git $ZSH/custom/plugins/fzf-zsh
-    git clone https://github.com/paulirish/git-open.git $ZSH/custom/plugins/git-open
+    plugins_path=(
+      $ZSH/custom/plugins/zsh-syntax-highlighting
+      $ZSH/custom/plugins/zsh-autosuggestions
+      $ZSH/custom/plugins/fzf
+      $ZSH/custom/plugins/fzf-zsh
+      $ZSH/custom/plugins/git-open
+    )
 
-    source ~/.zshrc
+    git_urls=(
+      https://github.com/zsh-users/zsh-syntax-highlighting.git
+      git://github.com/zsh-users/zsh-autosuggestions
+      https://github.com/junegunn/fzf.git
+      https://github.com/Treri/fzf-zsh.git
+      https://github.com/paulirish/git-open.git
+    )
+
+    for(( i=0;i<${#plugins_path[@]};i++))
+    do
+      plugin_path=${plugins_path[i]}
+      git_url=${git_urls[i]}
+
+      if [[ -d ${plugin_path} ]]
+      then
+          cd ${plugin_path}
+
+          if [[ -d ${plugin_path}/.git ]]
+          then
+            git pull origin $(git symbolic-ref --short -q HEAD)
+          fi
+
+      else
+          git clone ${git_url} ${plugin_path}
+      fi
+    done
+
+#    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH/custom/plugins/zsh-syntax-highlighting
+#    git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH/custom/plugins/zsh-autosuggestions
+#    git clone https://github.com/junegunn/fzf.git $ZSH/custom/plugins/fzf
+#    git clone https://github.com/Treri/fzf-zsh.git $ZSH/custom/plugins/fzf-zsh
+#    git clone https://github.com/paulirish/git-open.git $ZSH/custom/plugins/git-open
+
+#    source ~/.zshrc
     echo -e "zsh deploy success!"
 }
 
