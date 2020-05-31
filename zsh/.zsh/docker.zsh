@@ -48,6 +48,20 @@ _dstoprm(){
     docker rm $1
 }
 
+# 运行mysql8.0
+_drunmysql(){
+  docker run -d --name local-mysql -p 3306:3306 --restart=always -e MYSQL_ROOT_PASSWORD=123456 mysql:8.0
+}
+
+# 运行mysql
+_drunredis(){
+  docker run --name redis -d -p 6379:6379 --restart=always redis:latest
+}
+
+# 运行mongodb
+_drunmongodb(){
+  docker run -d -p 27017:27017 --name mongo --restart=always mongo:latest
+}
 
 # docker 命令简写
 
@@ -70,10 +84,10 @@ alias dstart="docker start"
 alias drestart="docker restart"
 alias dclearlog='sudo sh -c "$(curl https://raw.githubusercontent.com/zlzlife/zlz-project/master/docker/clear-container-log.sh)"'
 
-# 示例: dl redis
+# 示例: dlogs redis
 alias dlogs=_dl
 
-# 示例: dlf redis
+# 示例: dlogsf redis
 alias dlogsf=_dlf
 
 # 示例: drnpd redis 6379 6379 redis:latest
@@ -82,4 +96,14 @@ alias drnpd=_drnpd
 # 示例: drnpd demo dockerhub.com
 alias dlogin=_dlogin
 
+# 示例: dstoprm ubuntu
 alias dstoprm=_dstoprm
+
+# 示例: drunmysql
+alias drunmysql=_drunmysql
+
+# 示例: drunredis
+alias drunredis=_drunredis
+
+# 示例: drunmongodb
+alias drunmongodb=_drunmongodb
