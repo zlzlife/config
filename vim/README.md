@@ -111,17 +111,22 @@
 - [markdown-preview](https://github.com/iamcco/markdown-preview.vim)
 
 ### 快捷键说明
-- 复制选定快: **Y**
-- 复制当前行: **YY**
-- 剪切选定快: **D**
-- 删除当前行: **DD**
-- 删除当前字符: **X**
-- 还原上一个操作: **U**
+| 功能 | 按键 |
+| -- | -- |
+| 复制选定快 | Y |
+| 复制当前行 | YY |
+| 剪切选定快 | D |
+| 删除当前行 | DD |
+| 删除当前字符 | X |
+| 还原上一个操作 | U |
+
 
 ### 自定义快捷键
-- 弹出NERDTree: **F2**
-- 刷新NERDTree: **F5**
-- Markdown预览: **F8**
-- Markdown关闭预览: **F9**
-- NERDTree获取焦点: **Ctl+F**
+| 功能 | 按键 |
+| -- | -- |
+| 弹出NERDTree | F2 |
+| 刷新NERDTree | F5 |
+| Markdown预览 | F8 |
+| Markdown关闭预览 | F9 |
+| NERDTree获取焦点 | Ctl+F |
 
