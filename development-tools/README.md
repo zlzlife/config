@@ -18,5 +18,7 @@
 ## Database
 - [Datagrip](https://www.jetbrains.com/datagrip/)
 
+- [DBeaver](https://dbeaver.io/download/)
+
 ## Vscode
 - [Vscode](https://code.visualstudio.com)
