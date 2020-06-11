@@ -20,5 +20,7 @@
 
 - [DBeaver](https://dbeaver.io/download/)
 
+- [Sequel Pro](https://www.sequelpro.com/)
+
 ## Vscode
 - [Vscode](https://code.visualstudio.com)
