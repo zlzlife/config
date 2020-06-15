@@ -1,4 +1,9 @@
 # i3wm个人配置
+
+### 资源链接
+
+- [官网](https://i3wm.org/)
+
 ### 安装i3wm
 
 - ubuntu 系统
