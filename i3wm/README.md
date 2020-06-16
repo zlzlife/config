@@ -11,6 +11,12 @@
     sudo apt install i3
 ```
 
+### 初次使用
+
+```
+    i3-config-wizard
+```
+
 ### 安装配置应用软件
 - 截图软件,使用 [flameshot](https://flameshot.js.org/) ubuntu18.04以上系统可安装
 ```shell
