@@ -53,7 +53,7 @@ _drunmysql(){
   docker run -d --name local-mysql -p 3306:3306 --restart=always -e MYSQL_ROOT_PASSWORD=123456 mysql:8.0
 }
 
-# 运行mysql
+# 运行redis
 _drunredis(){
   docker run --name redis -d -p 6379:6379 --restart=always redis:latest
 }
@@ -61,6 +61,11 @@ _drunredis(){
 # 运行mongodb
 _drunmongodb(){
   docker run -d -p 27017:27017 --name mongo --restart=always mongo:latest
+}
+
+# 运行sql server
+_drunmssql(){
+  docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=MyPassWord123"  -p 1433:1433 --name sql1  -d mcr.microsoft.com/mssql/server:2017-latest
 }
 
 # docker 命令简写
