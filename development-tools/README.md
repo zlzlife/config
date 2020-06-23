@@ -1,7 +1,7 @@
 # 开发工具大全
 
 ## Mongo
-- [Robo 3T](https://robomongo.org)
+- [Robo 3T](https://robomongo.org/download)
 
 ## Redis
 - [Redis Desktop Manager](https://redisdesktop.com/download)
