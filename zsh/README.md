@@ -6,6 +6,11 @@
     sudo apt install zsh
 ```
 
+- mac 系统
+```shell
+    brew install zsh
+```
+
 - 安装.oh-my-zsh
 ```bash
     # curl 方式:    
