@@ -13,3 +13,5 @@
 - [ubuntu-releases地址](http://releases.ubuntu.com)
 
 - [冷熊简历](http://cv.ftqq.com/)
+
+- [让你怀疑的JS面试](http://javascript-puzzlers.herokuapp.com/)
