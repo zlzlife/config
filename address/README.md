@@ -15,3 +15,5 @@
 - [冷熊简历](http://cv.ftqq.com/)
 
 - [让你怀疑的JS面试](http://javascript-puzzlers.herokuapp.com/)
+
+- [idea破解码](http://lookdiv.com/)
