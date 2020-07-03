@@ -41,3 +41,12 @@ sudo apt-get install remmina remmina-plugin-*
 sudo apt-get update
 sudo apt-get install simplescreenrecorder
 ```
+
+- 安装google
+```bash 
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb
+
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+sudo dpkg -i wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb
+```
