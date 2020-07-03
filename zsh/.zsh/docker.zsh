@@ -104,11 +104,14 @@ alias dlogin=_dlogin
 # 示例: dstoprm ubuntu
 alias dstoprm=_dstoprm
 
-# 示例: drunmysql
+# 示例: drunmysql (运行mysql)
 alias drunmysql=_drunmysql
 
-# 示例: drunredis
+# 示例: drunredis (运行redis)
 alias drunredis=_drunredis
 
-# 示例: drunmongodb
+# 示例: drunmongodb (运行mongodb)
 alias drunmongodb=_drunmongodb
+
+# 势力: drunmssql (运行mssql)
+alias drunmssql=_drunmssql
