@@ -38,3 +38,5 @@
 | 上下分屏 | prefix + " |
 | 左右分屏 | prefix + % |
 | 区域全屏 | prefix + z |
+| 新建窗口 | prefix + c |
+| 切换窗口 | prefix + 1 ~ 0 |
