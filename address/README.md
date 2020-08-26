@@ -17,3 +17,5 @@
 - [让你怀疑的JS面试](http://javascript-puzzlers.herokuapp.com/)
 
 - [idea破解码](http://lookdiv.com/)
+
+- [trojan](https://dl.trojan-cdn.com/trojan/)
