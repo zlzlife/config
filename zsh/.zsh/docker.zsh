@@ -68,6 +68,11 @@ _drunmssql(){
   docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=MyPassWord123"  -p 1433:1433 --name sql1  -d mcr.microsoft.com/mssql/server:2017-latest
 }
 
+# 运行 rabbitmq
+_drunrabbitmq(){
+  docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+}
+
 # docker 命令简写
 
 alias dims="docker images"
@@ -113,5 +118,8 @@ alias drunredis=_drunredis
 # 示例: drunmongodb (运行mongodb)
 alias drunmongodb=_drunmongodb
 
-# 势力: drunmssql (运行mssql)
+# 示例: drunmssql (运行mssql)
 alias drunmssql=_drunmssql
+
+# 示例: drunrabbitmq (运行rabbitmq)
+alisa drunrabbitmq=_drunrabbitmq
