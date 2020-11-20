@@ -68,6 +68,13 @@ _drunmssql(){
   docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=MyPassWord123"  -p 1433:1433 --name sql1  -d mcr.microsoft.com/mssql/server:2017-latest
 }
 
+# 运行jira
+_drunjira(){
+#  docker volume create --name jiraVolume
+#  docker cp mysql-connector-java.x.y.z.jar jira:/opt/atlassian/jira/lib
+  docker run -v /root/jira-data:/var/atlassian/application-data/jira --name="jira" -d -p 8080:8080 atlassian/jira-software
+}
+
 # docker 命令简写
 
 alias dims="docker images"
