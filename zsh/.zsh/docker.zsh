@@ -75,6 +75,11 @@ _drunjira(){
   docker run -v /root/jira-data:/var/atlassian/application-data/jira --name="jira" -d -p 8080:8080 atlassian/jira-software
 }
 
+# 运行 rabbitmq
+_drunrabbitmq(){
+  docker run -d -e RABBITMQ_DEFAULT_USER=user -e RABBITMQ_DEFAULT_PASS=password --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+}
+
 # docker 命令简写
 
 alias dims="docker images"
@@ -120,5 +125,8 @@ alias drunredis=_drunredis
 # 示例: drunmongodb (运行mongodb)
 alias drunmongodb=_drunmongodb
 
-# 势力: drunmssql (运行mssql)
+# 示例: drunmssql (运行mssql)
 alias drunmssql=_drunmssql
+
+# 示例: drunrabbitmq (运行rabbitmq)
+alisa drunrabbitmq=_drunrabbitmq
