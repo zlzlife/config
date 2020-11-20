@@ -71,7 +71,7 @@ _drunmssql(){
 # 运行jira
 _drunjira(){
 #  docker volume create --name jiraVolume
-#  docker cp mysql-connector-java.x.y.z.jar jira:/opt/atlassian/jira/lib
+#  docker cp mysql-connector-java-8.0.15.jar jira:/opt/atlassian/jira/lib
   docker run -v /root/jira-data:/var/atlassian/application-data/jira --name="jira" -d -p 8080:8080 atlassian/jira-software
 }
 
