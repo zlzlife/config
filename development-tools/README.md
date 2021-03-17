@@ -24,3 +24,6 @@
 
 ## Vscode
 - [Vscode](https://code.visualstudio.com)
+
+## DBeaver
+- [DBeaver](https://dbeaver.io/)
