@@ -22,8 +22,7 @@
 
 - [Sequel Pro](https://www.sequelpro.com/)
 
+- [DBeaver](https://dbeaver.io/)
+
 ## Vscode
 - [Vscode](https://code.visualstudio.com)
-
-## DBeaver
-- [DBeaver](https://dbeaver.io/)
