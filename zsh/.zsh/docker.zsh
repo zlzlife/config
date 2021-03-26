@@ -129,4 +129,4 @@ alias drunmongodb=_drunmongodb
 alias drunmssql=_drunmssql
 
 # 示例: drunrabbitmq (运行rabbitmq)
-alisa drunrabbitmq=_drunrabbitmq
+alias drunrabbitmq=_drunrabbitmq
