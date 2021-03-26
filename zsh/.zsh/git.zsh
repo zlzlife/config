@@ -104,3 +104,4 @@ alias gpatag='git push --tags'
 alias gchpick='git cherry-pick'
 
 alias glola="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --all"
+alias gpath="git rev-parse --show-toplevel"
