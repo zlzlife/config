@@ -48,6 +48,12 @@ _dstoprm(){
     docker rm $1
 }
 
+# 根据镜像名称过滤，并删除容器
+# drmil prod
+_drmil(){
+  docker rmi $(docker images | grep $1 | tr -s ' ' | cut -d ' ' -f 3)
+}
+
 # 运行mysql8.0
 _drunmysql(){
   docker run -d --name local-mysql -p 3306:3306 --restart=always -e MYSQL_ROOT_PASSWORD=123456 mysql:8.0
@@ -130,3 +136,6 @@ alias drunmssql=_drunmssql
 
 # 示例: drunrabbitmq (运行rabbitmq)
 alias drunrabbitmq=_drunrabbitmq
+
+# 示例: drmil prod
+alias drmil=_drmil
