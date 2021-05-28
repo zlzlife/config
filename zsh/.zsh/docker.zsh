@@ -51,7 +51,39 @@ _dstoprm(){
 # 根据镜像名称过滤，并删除容器
 # drmil prod
 _drmil(){
-  docker rmi $(docker images | grep $1 | tr -s ' ' | cut -d ' ' -f 3)
+  # 检查是否有输入检索参数
+  if [[ -z $1 ]]
+  then
+    exit
+  fi
+
+  # 打印过滤对镜像名称
+  names=($(docker images | grep $1 | tr -s ' ' | cut -d ' ' -f 1))
+  tags=($(docker images | grep $1 | tr -s ' ' | cut -d ' ' -f 2))
+
+  if [[ -z ${names} ]]
+  then 
+    echo "未检索到包含\"$1\"的镜像"
+    exit
+  fi
+
+  count=0
+
+  for(( i=0;i<${#names[@]};i++))
+  do 
+    name=${names[i]}
+    tag=${tags[i]}
+    echo " $(expr ${i} + 1). ${name}:${tag}"
+    count=$(expr ${count} + 1)
+  done
+
+  # 确认是否要删除
+  read -t 10 -p "确定要删除这${count}个images么？(Y/n)" del
+
+  case ${del} in
+  Y | y)
+    docker rmi $(docker images | grep $1 | tr -s ' ' | cut -d ' ' -f 3)
+  esac
 }
 
 # 运行mysql8.0
