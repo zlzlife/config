@@ -54,7 +54,7 @@ _drmil(){
   # 检查是否有输入检索参数
   if [[ -z $1 ]]
   then
-    exit
+    exit 0
   fi
 
   # 打印过滤对镜像名称
@@ -69,7 +69,7 @@ _drmil(){
 
   count=0
 
-  for(( i=0;i<${#names[@]};i++))
+  for (( i=0;i<${#names[@]};i++))
   do 
     name=${names[i]}
     tag=${tags[i]}
