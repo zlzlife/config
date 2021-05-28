@@ -73,12 +73,13 @@ _drmil(){
   do 
     name=${names[i]}
     tag=${tags[i]}
-    echo " $(expr ${i} + 1). ${name}:${tag}"
+    echo "$(expr ${i} + 1). ${name}:${tag}"
     count=$(expr ${count} + 1)
   done
 
+  echo "确定要删除这${count}个images么？(Y/n)"
   # 确认是否要删除
-  read -t 10 -p "确定要删除这${count}个images么？(Y/n)" del
+  read -t 10 del
 
   case ${del} in
   Y | y)
