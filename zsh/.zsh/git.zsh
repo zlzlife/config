@@ -11,7 +11,7 @@ _gac() {
     commit_info=$1
         if [ -z ${commit_info} ]
         then
-            commit_info="add or update files"
+            commit_info=$(date "+%Y-%m-%d %H:%M:%S")
         fi
     git add .
     git commit -m ${commit_info}
