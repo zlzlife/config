@@ -12,6 +12,7 @@ _gac() {
         if [ -z ${commit_info} ]
         then
             commit_info=$(date "+%Y-%m-%d %H:%M:%S")
+            echo "$commit_info"
         fi
     git add .
     git commit -m ${commit_info}
