@@ -23,7 +23,7 @@ _dlf(){
 _drnpd(){
     containerName=$1
     hostPort=$2
-    containerPort=3
+    containerPort=$3
     tagName=$4
 
     echo "docker run --name ${containerName}  -p ${hostPort}:${containerPort} -d ${tagName}"
@@ -69,7 +69,7 @@ _drmil(){
 
   count=0
 
-  for (( i=0;i<${#names[@]};i++))
+  for (( i=0;i<${#names[@]};i++ ))
   do 
     name=${names[i]}
     tag=${tags[i]}
