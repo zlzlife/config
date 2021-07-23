@@ -64,27 +64,25 @@ _drmil(){
   if [[ -z ${names} ]]
   then 
     echo "未检索到包含\"$1\"的镜像"
-    exit
+  else 
+    count=0
+    for (( i=0;i<${#names[@]};i++ ))
+    do 
+      name=${names[i]}
+      tag=${tags[i]}
+      echo "$(expr ${i} + 1). ${name}:${tag}"
+      count=$(expr ${count} + 1)
+    done
+
+    echo "确定要删除这${count}个images么？(Y/n)"
+    # 确认是否要删除
+    read -t 10 del
+
+    case ${del} in
+    Y | y)
+      docker rmi $(docker images | grep $1 | tr -s ' ' | cut -d ' ' -f 3)
+    esac
   fi
-
-  count=0
-
-  for (( i=0;i<${#names[@]};i++ ))
-  do 
-    name=${names[i]}
-    tag=${tags[i]}
-    echo "$(expr ${i} + 1). ${name}:${tag}"
-    count=$(expr ${count} + 1)
-  done
-
-  echo "确定要删除这${count}个images么？(Y/n)"
-  # 确认是否要删除
-  read -t 10 del
-
-  case ${del} in
-  Y | y)
-    docker rmi $(docker images | grep $1 | tr -s ' ' | cut -d ' ' -f 3)
-  esac
 }
 
 # 运行mysql8.0
