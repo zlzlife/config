@@ -42,7 +42,14 @@ _zshconfig(){
         mkdir ${zshpath}
     fi
     cp ${rootpath}/zsh/.zsh/* ${zshpath}
-    cp ${rootpath}/zsh/.zshrc ~/
+
+    if [[ -f "${HOME}/.zshrc" ]]
+    then 
+        echo ".zshrc文件已存在。"
+    else
+        echo ".zshrc文件不存在。"
+        cp ${rootpath}/zsh/.zshrc ~/
+    fi
 
     plugins_path=(
       $ZSH/custom/plugins/zsh-syntax-highlighting
