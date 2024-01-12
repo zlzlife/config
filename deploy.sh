@@ -42,7 +42,14 @@ _zshconfig(){
         mkdir ${zshpath}
     fi
     cp ${rootpath}/zsh/.zsh/* ${zshpath}
-    cp ${rootpath}/zsh/.zshrc ~/
+
+    if [[ -f "${HOME}/.zshrc" ]]
+    then 
+        echo ".zshrc文件已存在。"
+    else
+        echo ".zshrc文件不存在。"
+        cp ${rootpath}/zsh/.zshrc ~/
+    fi
 
     plugins_path=(
       $ZSH/custom/plugins/zsh-syntax-highlighting
@@ -54,7 +61,7 @@ _zshconfig(){
 
     git_urls=(
       https://github.com/zsh-users/zsh-syntax-highlighting.git
-      git://github.com/zsh-users/zsh-autosuggestions
+      https://github.com/zsh-users/zsh-autosuggestions.git
       https://github.com/junegunn/fzf.git
       https://github.com/Treri/fzf-zsh.git
       https://github.com/paulirish/git-open.git
